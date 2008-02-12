@@ -110,14 +110,7 @@ class CalaisConnection(object):
             
         rdf_raw = urllib.unquote_plus(response.read())
         conn.close()
-        
-        
-        
         doc = parseString(rdf_raw)
         
-        # TODO: Convert the character entities in 
-        #       doc.childNodes[0].childNodes[0].nodeValue
-        #       and this pass on to the RDF parsing library.
-
         return parseString(doc.childNodes[0].childNodes[0].nodeValue)
         
