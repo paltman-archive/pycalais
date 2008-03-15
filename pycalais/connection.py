@@ -113,4 +113,4 @@ class CalaisConnection(object):
         doc = parseString(rdf_raw)
         
         return parseString(doc.childNodes[0].childNodes[0].nodeValue)
-        
+

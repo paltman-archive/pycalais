@@ -1,0 +1,3 @@
+[ ] Implement configuration file use via SafeConfigParser instead of depending
+    on environment variables.
+[ ] Write tests to flush out interface design.
